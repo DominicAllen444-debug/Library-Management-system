@@ -48,4 +48,4 @@ public class LibraryTest {
         assertTrue(availableBooks < 0);
     }
 }
-```
+
