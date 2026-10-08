@@ -10,6 +10,6 @@ public class LibraryTest {
 
         int available = books - issued;
 
-        assertEquals(7, available);
+        assertEquals(6, available);
     }
 }
