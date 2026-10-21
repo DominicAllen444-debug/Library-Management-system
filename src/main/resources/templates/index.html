@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Library Management System</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5f9;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background: #1f4e79;
+            color: white;
+            padding: 25px;
+        }
+
+        main {
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .card {
+            display: inline-block;
+            background: white;
+            padding: 25px;
+            margin: 10px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #cccccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 th:text="${title}">Library Management System</h1>
+        <p>Manage books, members, borrowing and fines.</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Book Catalog</h2>
+            <p>View and search books.</p>
+        </div>
+
+        <div class="card">
+            <h2>Members</h2>
+            <p>Manage library members.</p>
+        </div>
+
+        <div class="card">
+            <h2>Issue & Return</h2>
+            <p>Manage borrowed books.</p>
+        </div>
+
+        <div class="card">
+            <h2>Fine Calculation</h2>
+            <p>Calculate late-return fines.</p>
+        </div>
+    </main>
+
+</body>
+</html>

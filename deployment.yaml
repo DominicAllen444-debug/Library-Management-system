@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: library-management-system
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: library-management-system
+
+  template:
+    metadata:
+      labels:
+        app: library-management-system
+
+    spec:
+      containers:
+        - name: library-app
+          image: harshi1802/library-management-system:v1
+          imagePullPolicy: Always
+
+          ports:
+            - containerPort: 8082
