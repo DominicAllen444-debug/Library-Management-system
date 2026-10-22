@@ -20,7 +20,6 @@ spec:
       containers:
         - name: library-app
           image: harshi1802/library-management-system:v1
-          imagePullPolicy: Always
-
+          imagePullPolicy: Never
           ports:
             - containerPort: 8082
